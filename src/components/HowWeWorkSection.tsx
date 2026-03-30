@@ -4,7 +4,7 @@ import { HOW_WE_WORK_STEPS, type Step } from "../constants";
 
 const HowWeWorkSection: React.FC = () => {
     return (
-        <section className="py-20 bg-bg-light">
+        <section id="process" className="py-20 bg-bg-light">
 
             {/* Header */}
             <div className="text-center mb-12">

@@ -4,7 +4,7 @@ import { COMPANY } from "../constants";
 
 const ContactSection: React.FC = () => {
   return (
-    <section className="bg-gray-50 py-16 px-4 md:px-10">
+    <section id="contact" className="bg-gray-50 py-16 px-4 md:px-10">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start">
         
         {/* LEFT SIDE */}
@@ -96,7 +96,6 @@ const ContactSection: React.FC = () => {
               <select
                 className="w-full px-4 py-3 rounded-xl bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
-                <option>Select Service</option>
                 <option>Web Development</option>
                 <option>Mobile App</option>
                 <option>UI/UX Design</option>

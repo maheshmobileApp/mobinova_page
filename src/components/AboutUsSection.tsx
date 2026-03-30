@@ -9,27 +9,27 @@ import { ABOUT_US_SECTIONS } from "../constants";
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="bg-gray-50 py-16 px-4 md:px-10">
+    <section id="about" className="bg-gray-50 py-16 px-4 md:px-10">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         
         {/* LEFT SIDE */}
         <div>
-          <p className="text-blue-600 font-semibold text-sm mb-2">
+          <p className="section-heading text-primary">
             ABOUT US
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="section-sub-heading mb-3">
             Your Trusted Technology Partner
           </h2>
 
-          <p className="text-gray-600 mb-4 leading-relaxed">
+          <p className="section-description">
             We are a full-service IT company specializing in mobile and web
             application development. Our team of experienced engineers,
             designers, and strategists work together to deliver solutions
             that meet the highest standards of quality and performance.
           </p>
 
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="section-description mb-3">
             From startups to enterprises, we partner with businesses across
             industries to transform ideas into scalable, secure, and
             user-friendly digital products.

@@ -30,12 +30,12 @@ html {
 }
 
 .section-heading {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 }
 
 .section-sub-heading {
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 700;
   color: var(--color-text-dark);
 }
