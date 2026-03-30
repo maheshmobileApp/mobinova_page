@@ -103,3 +103,28 @@ export const ABOUT_US_SECTIONS = [
     "24/7 Support",
     "NDA Protected",
 ]
+
+// ✅ Type
+export type TechCategory = {
+  title: string;
+  items: string[];
+};
+
+export const TECH_STACK: TechCategory[] = [
+  {
+    title: "MOBILE",
+    items: ["Kotlin", "Swift", "React Native", "Flutter"],
+  },
+  {
+    title: "FRONTEND",
+    items: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    title: "BACKEND",
+    items: ["Node.js", "Python", "Java", ".NET"],
+  },
+  {
+    title: "CLOUD & DEVOPS",
+    items: ["AWS", "Azure", "Docker", "CI/CD"],
+  },
+];

@@ -29,7 +29,7 @@ const HeroSection: React.FC = () => {
                     {COMPANY.heroHeading.line2}
                 </h1>
 
-                <p className="max-w-xl text-slate-300 mb-6">
+                <p className="max-w-xl text-slate-300 mb-6 text-lg">
                     {COMPANY.description}
                 </p>
 

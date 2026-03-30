@@ -1,30 +1,8 @@
 import React from "react";
+import { TECH_STACK } from "../constants";
 
-// ✅ Type
-type TechCategory = {
-  title: string;
-  items: string[];
-};
 
-// ✅ Data (Reusable)
-const techStack: TechCategory[] = [
-  {
-    title: "MOBILE",
-    items: ["Kotlin", "Swift", "React Native", "Flutter"],
-  },
-  {
-    title: "FRONTEND",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-  },
-  {
-    title: "BACKEND",
-    items: ["Node.js", "Python", "Java", ".NET"],
-  },
-  {
-    title: "CLOUD & DEVOPS",
-    items: ["AWS", "Azure", "Docker", "CI/CD"],
-  },
-];
+
 
 const TechStackSection: React.FC = () => {
   return (
@@ -33,18 +11,18 @@ const TechStackSection: React.FC = () => {
         
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-blue-600 font-semibold text-sm tracking-wider mb-2">
+          <p className="section-heading text-primary">
             TECHNOLOGIES
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h2 className="section-sub-heading mb-3">
             Tech Stack We Work With
           </h2>
         </div>
 
         {/* Cards */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {techStack.map((category, index) => (
+          {TECH_STACK.map((category, index) => (
             <div
               key={index}
               className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"

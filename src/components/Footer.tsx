@@ -2,6 +2,9 @@ import React from "react";
 import Button from "./ui/Button";
 import { COMPANY } from "../constants";
 
+const scrollTo = (id: string) =>
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+
 const Footer: React.FC = () => {
   return (
     <footer className="bg-blue-50 px-6 md:px-16 py-12">
@@ -15,13 +18,12 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-2 mb-4">
               <Button>M</Button>
               <h3 className="text-lg font-semibold text-gray-900">
-                Mobinova Tech Solutions
+                {COMPANY.name}
               </h3>
             </div>
 
             <p className="text-gray-600 leading-relaxed">
-              Building world-class mobile and web applications for businesses
-              that demand excellence.
+              {COMPANY.description}
             </p>
           </div>
 
@@ -32,18 +34,10 @@ const Footer: React.FC = () => {
             </h4>
 
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-600 cursor-pointer">
-                Android Development
-              </li>
-              <li className="hover:text-blue-600 cursor-pointer">
-                iOS Development
-              </li>
-              <li className="hover:text-blue-600 cursor-pointer">
-                Web Development
-              </li>
-              <li className="hover:text-blue-600 cursor-pointer">
-                UI/UX Design
-              </li>
+              <li className="hover:text-blue-600 cursor-pointer" onClick={() => scrollTo("services")}>Android Development</li>
+              <li className="hover:text-blue-600 cursor-pointer" onClick={() => scrollTo("services")}>iOS Development</li>
+              <li className="hover:text-blue-600 cursor-pointer" onClick={() => scrollTo("services")}>Web Development</li>
+              <li className="hover:text-blue-600 cursor-pointer" onClick={() => scrollTo("services")}>UI/UX Design</li>
             </ul>
           </div>
 
@@ -54,18 +48,10 @@ const Footer: React.FC = () => {
             </h4>
 
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-600 cursor-pointer">
-                About Us
-              </li>
-              <li className="hover:text-blue-600 cursor-pointer">
-                Our Process
-              </li>
-              <li className="hover:text-blue-600 cursor-pointer">
-                Contact
-              </li>
-              <li className="hover:text-blue-600 cursor-pointer">
-                Careers
-              </li>
+              <li className="hover:text-blue-600 cursor-pointer" onClick={() => scrollTo("about")}>About Us</li>
+              <li className="hover:text-blue-600 cursor-pointer" onClick={() => scrollTo("process")}>Our Process</li>
+              <li className="hover:text-blue-600 cursor-pointer" onClick={() => scrollTo("contact")}>Contact</li>
+              <li className="hover:text-blue-600 cursor-pointer">Careers</li>
             </ul>
           </div>
         </div>
