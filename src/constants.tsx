@@ -1,0 +1,105 @@
+import React from "react";
+import { FaAndroid, FaApple, FaGlobe, FaCode, FaPaintBrush, FaTools } from "react-icons/fa";
+
+// ── Company ────────────────────────────────────────────────
+export const COMPANY = {
+    name: "Mobinova Tech Solutions",
+    email: "mobinova@gmail.com",
+    phone: "+91 9638527410",
+    address: "123 Tech Street, Hi-tech City, Hyderabad, India",
+    tagline: "Trusted IT Solutions Partner",
+    description:
+        "We design and develop high-performance mobile apps and web solutions that help businesses scale, innovate, and succeed.",
+    heroHeading: {
+        line1: "Building",
+        highlight1: "Digital",
+        highlight2: "Products",
+        line2: "That Drive Growth",
+    },
+    features: ["✔ Android & iOS Apps", "✔ Custom Web Solutions", "✔ Scalable Architecture"],
+};
+
+// ── Nav ────────────────────────────────────────────────────
+export type MenuItem = {
+    label: string;
+    path: string;
+};
+
+export const NAV_ITEMS: MenuItem[] = [
+    { label: "Home", path: "/" },
+    { label: "Services", path: "#services" },
+    { label: "About", path: "#about" },
+    { label: "Contact", path: "#contact" },
+];
+
+// ── Services ───────────────────────────────────────────────
+export type Service = {
+    title: string;
+    description: string;
+    icon: React.ReactNode;
+};
+
+export const SERVICES: Service[] = [
+    {
+        title: "Android Development",
+        description: "High-performance native Android apps using Kotlin, Jetpack Compose, and modern architecture patterns.",
+        icon: <FaAndroid size={22} />,
+    },
+    {
+        title: "iOS Development",
+        description: "Premium iOS applications built with Swift and SwiftUI, optimized for every Apple device.",
+        icon: <FaApple size={22} />,
+    },
+    {
+        title: "Web Development",
+        description: "Responsive, fast-loading websites and web apps using React, Next.js, and modern frameworks.",
+        icon: <FaGlobe size={22} />,
+    },
+    {
+        title: "Cross-Platform Apps",
+        description: "Cost-effective multi-platform solutions with React Native and Flutter for iOS and Android.",
+        icon: <FaCode size={22} />,
+    },
+    {
+        title: "UI/UX Design",
+        description: "Research-backed interface design that maximizes user engagement and business conversions.",
+        icon: <FaPaintBrush size={22} />,
+    },
+    {
+        title: "Maintenance & Support",
+        description: "24/7 monitoring, bug fixes, performance tuning, and feature updates for your live products.",
+        icon: <FaTools size={22} />,
+    },
+];
+
+// ── How We Work ────────────────────────────────────────────
+export type Step = {
+    title: string;
+    description: string;
+};
+
+export const HOW_WE_WORK_STEPS: Step[] = [
+    {
+        title: "Discovery",
+        description: "We analyze your requirements, goals, and target audience to define the project scope.",
+    },
+    {
+        title: "Design",
+        description: "We create wireframes and prototypes to visualize the product before development begins.",
+    },
+    {
+        title: "Development",
+        description: "Our engineers build the product using modern technologies and best practices.",
+    },
+    {
+        title: "Delivery",
+        description: "We deploy, test, and hand over the product with full documentation and support.",
+    },
+];
+
+export const ABOUT_US_SECTIONS = [
+    "Agile Methodology",
+    "ISO Certified",
+    "24/7 Support",
+    "NDA Protected",
+]
