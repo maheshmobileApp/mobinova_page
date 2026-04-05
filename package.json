@@ -3,17 +3,21 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/Naniteppala118/mobinova_tech.git",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "@tailwindcss/vite": "^4.2.2",
     "axios": "^1.11.0",
     "dayjs": "^1.11.13",
+    "gh-pages": "^6.3.0",
     "i18next": "^25.4.2",
     "lucide-react": "^1.7.0",
     "react": "^19.1.0",
