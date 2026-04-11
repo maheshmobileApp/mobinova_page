@@ -159,11 +159,6 @@ export const PRIVACY_POLICY = {
 
 export const PROJECTS = [
   {
-    name: "AHP Medicals",
-    link: "https://play.google.com/store/apps/details?id=com.ahpmedicals.app&pcampaignid=web_share",
-    logo: "https://play-lh.googleusercontent.com/7v2duIKe8uhNqzZmgB5nrVFrilSAPdZ__9oRBAmAuwu5NehYbA4XUw4UYC4Xmhjk358=w480-h960-rw"
-  },
-  {
     name: "WhatsApp Clone",
     link: "https://web.whatsapp.com",
     logo: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
