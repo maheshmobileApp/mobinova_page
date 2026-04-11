@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
                         </a>
                     ))}
 
-                    <Button>Get a Quote</Button>
+                    <Button href = "#contact" >Get a Quote</Button>
                 </div>
             </div>
         </nav>

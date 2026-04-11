@@ -1,4 +1,5 @@
 import React from "react";
+import { Clock, Target, Users, BadgeCheck } from "lucide-react";
 import { FaAndroid, FaApple, FaGlobe, FaCode, FaPaintBrush, FaTools } from "react-icons/fa";
 
 // ── Company ────────────────────────────────────────────────
@@ -104,6 +105,19 @@ export const ABOUT_US_SECTIONS = [
     "NDA Protected",
 ]
 
+export type AboutStat = {
+    icon: React.ReactNode;
+    value: string;
+    label: string;
+};
+
+export const ABOUT_STATS: AboutStat[] = [
+    { icon: <Clock className="mx-auto text-blue-600 mb-2" />, value: "5+", label: "Years in Business" },
+    { icon: <Target className="mx-auto text-blue-600 mb-2" />, value: "20+", label: "Projects Delivered" },
+    { icon: <Users className="mx-auto text-blue-600 mb-2" />, value: "20+", label: "Happy Clients" },
+    { icon: <BadgeCheck className="mx-auto text-blue-600 mb-2" />, value: "99%", label: "Client Retention" },
+];
+
 // ✅ Type
 export type TechCategory = {
   title: string;
@@ -126,5 +140,86 @@ export const TECH_STACK: TechCategory[] = [
   {
     title: "CLOUD & DEVOPS",
     items: ["AWS", "Azure", "Docker", "CI/CD"],
+  },
+];
+
+export const PRIVACY_POLICY = {
+  lastUpdated: "January 2025",
+  sections: [
+    {
+      title: "1. Information We Collect",
+      content: "We collect information you provide..."
+    },
+    {
+      title: "2. How We Use Your Information",
+      content: "We use the information..."
+    }
+  ]
+};
+
+export const PROJECTS = [
+  {
+    name: "AHP Medicals",
+    link: "https://play.google.com/store/apps/details?id=com.ahpmedicals.app&pcampaignid=web_share",
+    logo: "https://play-lh.googleusercontent.com/7v2duIKe8uhNqzZmgB5nrVFrilSAPdZ__9oRBAmAuwu5NehYbA4XUw4UYC4Xmhjk358=w480-h960-rw"
+  },
+  {
+    name: "WhatsApp Clone",
+    link: "https://web.whatsapp.com",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+  },
+  {
+    name: "Spotify Music",
+    link: "https://spotify.com",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
+  },
+  {
+    name: "Amazon Shopping",
+    link: "https://amazon.in",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+  },
+  {
+    name: "Instagram Lite",
+    link: "https://instagram.com",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+  },
+  {
+    name: "Flipkart Store",
+    link: "https://flipkart.com",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Flipkart_logo.png"
+  },
+  {
+    name: "Google Maps UI",
+    link: "https://maps.google.com",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/9/99/Google_Maps_icon.svg"
+  },
+  {
+    name: "YouTube Studio",
+    link: "https://youtube.com",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
+  }
+];
+
+export type Review = {
+  name: string;
+  role: string;
+  text: string;
+};
+
+export const initialReviews: Review[] = [
+  {
+    name: "Ravi Kumar",
+    role: "Startup Founder",
+    text: "Mobinova delivered our app perfectly. Highly recommended!",
+  },
+  {
+    name: "Sneha Reddy",
+    role: "Business Owner",
+    text: "Very professional team. Great communication and support.",
+  },
+  {
+    name: "Arjun Patel",
+    role: "Entrepreneur",
+    text: "They built our website and mobile app flawlessly.",
   },
 ];
