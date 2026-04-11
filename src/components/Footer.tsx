@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "./ui/Button";
 import { COMPANY } from "../constants";
 
@@ -64,12 +65,9 @@ const Footer: React.FC = () => {
 
           {/* RIGHT */}
           <div className="flex gap-6 mt-3 md:mt-0">
-            <span className="hover:text-blue-600 cursor-pointer">
+            <Link to="/privacy-policy" className="hover:text-blue-600 cursor-pointer">
               Privacy Policy
-            </span>
-            <span className="hover:text-blue-600 cursor-pointer">
-              Terms of Service
-            </span>
+            </Link>
           </div>
         </div>
 

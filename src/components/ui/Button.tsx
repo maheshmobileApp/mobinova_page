@@ -4,6 +4,7 @@ type ButtonProps = {
   children: React.ReactNode;
   variant?: "primary" | "outline";
   onClick?: () => void;
+  href?: string;
   className?: string;
 };
 
@@ -11,6 +12,7 @@ const Button: React.FC<ButtonProps> = ({
   children,
   variant = "primary",
   onClick,
+  href,
   className = "",
 }) => {
   const baseStyle =
@@ -22,6 +24,17 @@ const Button: React.FC<ButtonProps> = ({
     outline:
       "border border-gray-300 text-white-700 hover:bg-primary-100 hover:text-white",
   };
+
+  if (href) {
+    return (
+      <a
+        href={href}
+        className={`${baseStyle} ${variants[variant]} ${className}`}
+      >
+        {children}
+      </a>
+    );
+  }
 
   return (
     <button
