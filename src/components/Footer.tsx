@@ -68,6 +68,9 @@ const Footer: React.FC = () => {
             <Link to="/privacy-policy" className="hover:text-blue-600 cursor-pointer">
               Privacy Policy
             </Link>
+            <Link to="/terms-of-service" className="hover:text-blue-600 cursor-pointer">
+              Terms of Service
+            </Link>
           </div>
         </div>
 

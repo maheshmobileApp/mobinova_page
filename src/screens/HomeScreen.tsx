@@ -19,9 +19,9 @@ const HomeScreen: React.FC = () => {
             <HowWeWorkSection />
             <AboutUsSection />
             <TechStackSection />
-            <ContactSection />
             <ProjectsSection />
             <ReviewsSection />
+            <ContactSection />
             <Footer />
         </>
 
