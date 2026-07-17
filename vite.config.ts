@@ -4,5 +4,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/mobinova_page/', // 👈 ADD THIS
+  base: process.env.NODE_ENV === 'production' ? '/mobinova_tech_web/' : '/',
 })

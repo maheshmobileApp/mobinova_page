@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @theme {
   --color-primary: #2d6cdf;
   --color-primary-light: #5a9cff;
@@ -12,8 +13,9 @@
   --color-text-grey: #6b7280;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .section-label {
@@ -44,4 +46,11 @@ html {
   font-size: 16px;
   color: var(--color-text-muted);
   line-height: 1.7;
+}
+
+.section-font {
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+
 }

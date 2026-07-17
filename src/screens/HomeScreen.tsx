@@ -7,6 +7,8 @@ import AboutUsSection from "../components/AboutUsSection";
 import TechStackSection from "../components/TechStackSection";
 import ContactSection from "../components/ContactUsSection";
 import Footer from "../components/Footer";
+import ReviewsSection from "../components/ReviewSection";
+import ProjectsSection from "../components/Projects";
 
 const HomeScreen: React.FC = () => {
     return (
@@ -18,6 +20,8 @@ const HomeScreen: React.FC = () => {
             <AboutUsSection />
             <TechStackSection />
             <ContactSection />
+            <ProjectsSection />
+            <ReviewsSection />
             <Footer />
         </>
 

@@ -5,7 +5,7 @@ import Button from "./ui/Button";
 
 const HeroSection: React.FC = () => {
     return (
-        <div className="relative w-full h-[90vh] flex items-center text-white overflow-hidden">
+        <div  className="relative w-full h-[90vh] flex items-center text-white overflow-hidden">
 
             <div
                 className="absolute inset-0 bg-cover bg-center z-[1]"
@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
                     ● {COMPANY.tagline}
                 </span>
 
-                <h1 className="text-6xl font-bold leading-tight mb-6">
+                <h1 className="text-6xl font-bold leading-tight mb-6 section-font">
                     {COMPANY.heroHeading.line1} <span className="text-accent">{COMPANY.heroHeading.highlight1}</span> <br />
                     <span className="text-accent">{COMPANY.heroHeading.highlight2}</span> <br />
                     {COMPANY.heroHeading.line2}
@@ -40,8 +40,8 @@ const HeroSection: React.FC = () => {
                 </div>
 
                 <div className="flex gap-4">
-                    <Button>Start a Project →</Button>
-                    <Button variant="outline">
+                    <Button href="#contact">Start a Project →</Button>
+                    <Button href="#services" variant="outline">
                         Our Services
                     </Button>
                 </div>
