@@ -3,7 +3,7 @@ import HomeScreen from './screens/HomeScreen';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/mobinova_page">   {/* 👈 ADD THIS */}
       <Routes>
         <Route path="/" element={<HomeScreen />} />
       </Routes>

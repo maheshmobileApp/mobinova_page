@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Naniteppala118/mobinova_tech.git",
+  "homepage": "https://github.com/maheshmobileApp/mobinova_page.git",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
