@@ -157,7 +157,8 @@ export const PRIVACY_POLICY = {
   ]
 };
 
-export const PROJECTS = [
+export const PROJECTS = []
+/*[
   {
     name: "WhatsApp Clone",
     link: "https://web.whatsapp.com",
@@ -193,7 +194,7 @@ export const PROJECTS = [
     link: "https://youtube.com",
     logo: "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
   }
-];
+];*/
 
 export type Review = {
   name: string;
@@ -201,7 +202,9 @@ export type Review = {
   text: string;
 };
 
-export const initialReviews: Review[] = [
+export const initialReviews: Review[] = [] 
+/*
+[
   {
     name: "Ravi Kumar",
     role: "Startup Founder",
@@ -217,4 +220,4 @@ export const initialReviews: Review[] = [
     role: "Entrepreneur",
     text: "They built our website and mobile app flawlessly.",
   },
-];
+];*/

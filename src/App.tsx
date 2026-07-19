@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import PrivacyPolicyScreen from './screens/PrivacyPolicyScreen';
 
-const basename = import.meta.env.PROD ? '/mobinova_tech_web' : '/';
+const basename = '/';
 
 function App() {
   return (
