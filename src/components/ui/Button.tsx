@@ -29,6 +29,7 @@ const Button: React.FC<ButtonProps> = ({
     return (
       <a
         href={href}
+        onClick={onClick}
         className={`${baseStyle} ${variants[variant]} ${className}`}
       >
         {children}
