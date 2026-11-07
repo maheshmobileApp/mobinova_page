@@ -5,9 +5,9 @@ import { FaAndroid, FaApple, FaGlobe, FaCode, FaPaintBrush, FaTools } from "reac
 // ── Company ────────────────────────────────────────────────
 export const COMPANY = {
     name: "Mobinova Tech Solutions",
-    email: "mobinova@gmail.com",
-    phone: "+91 9638527410",
-    address: "123 Tech Street, Hi-tech City, Hyderabad, India",
+    email: "info@mobinovatechsolutions.com",
+    phone: "0207 407 4030",
+    address: "64 Borough high street , London SE1 1XF",
     tagline: "Trusted IT Solutions Partner",
     description:
         "We design and develop high-performance mobile apps and web solutions that help businesses scale, innovate, and succeed.",
